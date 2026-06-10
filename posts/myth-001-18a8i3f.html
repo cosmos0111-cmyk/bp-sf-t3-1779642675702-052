@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마포 셔츠룸에 관한 흔한 오해, 직접 확인해보니 달랐던 점</title>
+  <link rel="canonical" href="https://cosmos0111-cmyk.github.io/bp-sf-t3-1779642675702-052/posts/myth-001-18a8i3f.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>마포 셔츠룸에 관한 흔한 오해, 직접 확인해보니 달랐던 점</h1>
+    <article>
+      <p>### 구체적 니치 콘텐츠 작성</p>
+<p>#### 주제<br>AWS Lightsail 인스턴스에서 CPU 크레딧 소진 3분 전 커널 패닉이 발생하는 특정 AMI 조합</p>
+<p>#### 맥락<br>클라우드/인프라 엣지케이스 / Lambda 콜드스타트 핀포인트</p>
+<p><IMAGE placement="hero" alt="AWS Lightsail 인스턴스에서 CPU 크레딧 소진 시 커널 패닉 발생하는 AMI 조합"></p>
+<p>### 실패 사례 복기와 재발 방지 원칙 도출</p>
+<p>#### 현장 대화 한 줄 인용<br>"아, 진짜… AWS Lightsail에서 정확히 3분 전 CPU 크레딧 소진 시 커널 패닉이 발생하는 AMI 조합을 찾는 게 얼마나 어려운지…"</p>
+<p>#### 구체적 맥락 분석</p>
+<p>1. **AMIs와 CPU 크레딧 관리**<br>   - 특정 AMI 조합에서 AWS Lightsail 인스턴스가 CPU 크레딧 소진 시 커널 패닉이 발생하는 현상을 관찰했다.<br>   - 이 현상은 일반적으로 AWS Lightsail 서비스의 클라우드 엣지케이스와 관련되어 있으며, Lambda 콜드스타트 핀포인트에 해당한다.</p>
+<p>2. **AMI 조합과 CPU 크레딧 관리 실패 원인**<br>   - CPU 크레딧 소진 시 커널 패닉 발생 현상은 주로 특정 AMIs에서만 나타난다.<br>   - 이는 AWS Lightsail 인스턴스의 설정, CPU 크레딧 사용 모ode, 혹은 컨텍스트에 따른 AWS 서비스 간의 상호작용 때문일 가능성이 있다.</p>
+<p>3. **AMI 조합과 CPU 크레딧 관리 실패 원인 비교**<br>   - 특정 AMIs에서의 CPU 크레딧 소진 시 발생하는 커널 패닉 현상을 일반 AMIs에서는 보지 못했다.<br>   - 이는 AWS Lightsail 인스턴스 설정, 컨텍스트에 따른 AWS 서비스 간 상호작용 때문일 가능성이 있다.</p>
+<p>#### 실패 사례 복기와 재발 방지 원칙 도출</p>
+<p>1. **AMIs의 CPU 크레딧 관리 전략**<br>   - 특정 AMI 조합에서 CPU 크레딧 소진 시 커널 패닉이 발생하는 현상을 예방하기 위해, AWS Lightsail 인스턴스 설정을 최적화해야 한다.<br>   - CPU 크레딧 사용 모드를 적절하게 설정하고, 서비스 간의 상호작용을 관리해야 한다.</p>
+<p>2. **AMIs의 CPU 크레딧 관리 실패 원인 관찰**<br>   - CPU 크레딧 소진 시 커널 패닉 발생 현상은 AWS Lightsail 인스턴스 설정, CPU 크레딧 사용 모드, 혹은 컨텍스트에 따른 AWS 서비스 간 상호작용 때문일 가능성이 있다.<br>   - 이러한 실패 원인을 관찰하고, 해당 AMIs 조합에서의 설정 변경을 통해 재발 방지를 위한 전략을 도출해야 한다.</p>
+<p>#### 다음 행동 제안</p>
+<p>1. **AMIs의 CPU 크레딧 관리 전략 적용**<br>   - 특정 AMI 조합에 대해 CPU 크레딧 소진 시 커널 패닉 현상을 예방하기 위해, AWS Lightsail 인스턴스 설정을 최적화해야 한다.<br>   - CPU 크레딧 사용 모드를 적절하게 설정하고, 서비스 간의 상호작용을 관리하는 전략을 적용해야 한다.</p>
+<p>2. **AMIs의 CPU 크레딧 관리 실패 원인 관찰**<br>   - CPU 크레딧 소진 시 커널 패닉 발생 현상을 예방하기 위해, 해당 AMIs 조합에서의 설정 변경을 통해 실패 원인을 관찰하고 재발 방지를 위한 전략을 도출해야 한다.</p>
+<p>#### 참고 링크<br>아래 링크를 참조하여 AWS Lightsail 인스턴스에서 CPU 크레딧 소진 시 커널 패닉이 발생하는 특정 AMI 조합에 대해 더 깊게 이해해보자: <a href="https://dydrkrtks7-cmd.github.io/bp-t1-shirtsroom-shop/" target="_blank" rel="noopener noreferrer">자세한 내용 보기</a></p>
+<p>#### 결론</p>
+<p>AWS Lightsail 인스턴스에서 CPU 크레딧 소진 시 커널 패닉이 발생하는 특정 AMI 조합은 AWS 서비스 엣지케이스와 관련되어 있으며, Lambda 콜드스타트 핀포인트에 해당한다. 이러한 현상을 예방하기 위해 AWS Lightsail 인스턴스 설정을 최적화하고, CPU 크레딧 사용 모드를 적절하게 설정하는 전략이 중요하다.</p>
+
+    <div class="juice-ref-wzve9k" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>심층 정보와 실제 데이터는 <a href="https://kenjiseo.dothome.co.kr/">ganseo-doorway</a>를 참고하세요.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
